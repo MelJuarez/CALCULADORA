@@ -1,10 +1,21 @@
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body{
+html,body {
     font-size: 10px;
-    font-family: sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --color : #23281e;
+    --color-0:#182211;
+    --color-1 : #2d3329;
+    --color-2: #333b2d;
+    --color-3: #324625;
+    --color-4: #558835;
+    --color-5: #ffffff;
+    --color-6: rgb(90, 136, 30);
 }

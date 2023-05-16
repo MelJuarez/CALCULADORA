@@ -1,137 +1,125 @@
-body{
-    background-color: rgb(113, 212, 113);
-}
-.calculadora{
-    max-width: 56rem;
-    height: 60rem;
+
+#root {
+
+    max-width: 36.5rem;
     margin: auto;
-   
-
-
-    box-shadow: 8px 12px 18px 2px rgba(0,0,0,0.36);
-    -webkit-box-shadow: 8px 12px 18px 2px rgba(0,0,0,0.36);
-    -moz-box-shadow: 8px 12px 18px 2px rgba(0,0,0,0.36);
+    border-radius: 10px;
+    background-color: var(--color);
+    
 }
+.titulo {
 
-
-.pantalla{
     width: 100%;
-    height: 20rem;
-    background-color: rgb(255, 252, 255);
-    padding: 2rem;
-   
+    height: 4rem;
+    padding: 0.1rem 1rem;
+    font-size: 1.5rem;
 
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: end;
-}
-.teclado{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255, 252, 255);;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
-    padding: 2rem;
-   
-}
-
-
-.teclado div{
-    border-radius: 1rem;
-
-
+    color: var(--color-5);
+    background-color: var(--color);
+    
+    /*Display flex*/
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+.titulo span {
 
-
-
-    font-size: 5rem;
     font-weight: 600;
+}
+.record {
+    list-style: none;
+    width: 100%;
+    height: 11.5rem;
+    background-color: var(--color-2);
+    padding: 1rem;
+    color: var(--color-5);
+
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    overflow-y: scroll;
+}
+
+.record li {
+    width: 100%;
+    font-size: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.equal-sign {
+    color: var(--color-4);
+    justify-self: right;
+
+}
+.result {
+    font-weight: 500;
+    justify-self: right;
+}
+#total {
+    display: flex;
+    width: 100%;
+    height: 6.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 1rem;
+
+    background-color: var(--color-1);
+    color: var(--color-5);
+}
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(5,6.5rem);
+    grid-template-rows: repeat(5,4.5rem);
+    gap: 0.4rem;
+    padding: 1rem;
+}
+
+
+
+.key_item {
+    
+    border-radius: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: var(--color-2);
+    color: var(--color-5);
     cursor: pointer;
-   
-}
-.teclado div:hover{
-    background-color: rgb(71, 71, 71);
+
+    /*-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
-
-.cero{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: rgb(209, 209, 209);
+.tecla_1 {
+    background-color: var(--color-3);
 }
-.resultado{
-    font-size: 8rem;
-    font-weight: 600;
-    color: rgb(59, 33, 55);
-}
-.teclaigual{
-    background-color: blueviolet;
-}
-.tecladiv{
-    background-color: blueviolet;
-}
-.teclapor{
-    background-color: blueviolet;
-}
-.teclamenos{
-    background-color: blueviolet;
-}
-.teclasuma{
-    background-color: blueviolet;
+.tecla_2 {
+    background-color: var(--color-4);
+    color: var(--color);
+    
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;
 }
 
-
-
-
-
-
-.teclaac{
-    background-color: rgb(217, 176, 255);
+.delete {
+    width: 40%;
 }
-.teclapsng{
-    background-color: rgb(217, 176, 255);
+.key_item:active {
+    background-color: var(--color-6);
 }
-.teclaporc{
-    background-color: rgb(217, 176, 255);
-}
-
-
-
-
-.tecla1{
-    background-color: rgb(209, 209, 209);
-}
-.tecla2{
-    background-color: rgb(209, 209, 209);
-}
-.tecla3{
-    background-color: rgb(209, 209, 209);
-}
-.tecla4{
-    background-color: rgb(209, 209, 209);
-}
-.tecla5{
-    background-color: rgb(209, 209, 209);
-}
-.tecla6{
-    background-color: rgb(209, 209, 209);
-}
-.tecla7{
-    background-color: rgb(209, 209, 209);
-}.tecla8{
-    background-color: rgb(209, 209, 209);
-}.tecla9{
-    background-color: rgb(209, 209, 209);
-}
-.teclacoma{
-    background-color: rgb(209, 209, 209);
+.key_item:hover {
+    font-weight: 800;
 }

@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(113, 212, 113);
+}
+.calculadora{
+    max-width: 56rem;
+    height: 60rem;
+    margin: auto;
+   
+
+
+    box-shadow: 8px 12px 18px 2px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 8px 12px 18px 2px rgba(0,0,0,0.36);
+    -moz-box-shadow: 8px 12px 18px 2px rgba(0,0,0,0.36);
+}
+
+
+.pantalla{
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(255, 252, 255);
+    padding: 2rem;
+   
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+}
+.teclado{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 252, 255);;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 2rem;
+   
+}
+
+
+.teclado div{
+    border-radius: 1rem;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+    font-size: 5rem;
+    font-weight: 600;
+    cursor: pointer;
+   
+}
+.teclado div:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+
+
+
+.cero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(209, 209, 209);
+}
+.resultado{
+    font-size: 8rem;
+    font-weight: 600;
+    color: rgb(59, 33, 55);
+}
+.teclaigual{
+    background-color: blueviolet;
+}
+.tecladiv{
+    background-color: blueviolet;
+}
+.teclapor{
+    background-color: blueviolet;
+}
+.teclamenos{
+    background-color: blueviolet;
+}
+.teclasuma{
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+.teclaac{
+    background-color: rgb(217, 176, 255);
+}
+.teclapsng{
+    background-color: rgb(217, 176, 255);
+}
+.teclaporc{
+    background-color: rgb(217, 176, 255);
+}
+
+
+
+
+.tecla1{
+    background-color: rgb(209, 209, 209);
+}
+.tecla2{
+    background-color: rgb(209, 209, 209);
+}
+.tecla3{
+    background-color: rgb(209, 209, 209);
+}
+.tecla4{
+    background-color: rgb(209, 209, 209);
+}
+.tecla5{
+    background-color: rgb(209, 209, 209);
+}
+.tecla6{
+    background-color: rgb(209, 209, 209);
+}
+.tecla7{
+    background-color: rgb(209, 209, 209);
+}.tecla8{
+    background-color: rgb(209, 209, 209);
+}.tecla9{
+    background-color: rgb(209, 209, 209);
+}
+.teclacoma{
+    background-color: rgb(209, 209, 209);
+}

@@ -1,57 +1,41 @@
-
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+    <title>CALCULADORA</title>
 
-    <!----Archivos css-->
+    <!-----Archivos css--------->
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mobil.css">
     <link rel="stylesheet" href="./css/config.css">
 
-
-    <!---Tipografias----->
-</head>
-<body>
-
-
-    <main class="calculadora">
-        <div class="pantalla">
-            <span class="resultado">1234,56</span>
-        </div>
+    <!-----Tipografías-------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
 
 
-        <div class="teclado">
-            <div class="teclaac">AC</div>
-            <div class="teclapsng">+/-</div>
-            <div class="teclaporc">%</div>
-            <div class="tecladiv">/</div>
-            <div class="tecla7">7</div>
-            <div class="tecla9">9</div>
-            <div class="tecla8">8</div>
-            <div class="teclapor">X</div>
-            <div class="tecla4">4</div>
-            <div class="tecla5">5</div>
-            <div class="tecla6">6</div>
-            <div class="teclamenos">-</div>
-            <div class="tecla1">1</div>
-            <div class="tecla2">2</div>
-            <div class="tecla3">3</div>
-            <div class="teclasuma">+</div>
-            <div class="cero">0</div>
-            <div class="teclacoma">,</div>
-            <div class="teclaigual">=</div>
-        </div>
-    </main>
+    </head>
+        <body>
+            <main id="root">
+    
+                <div class="titulo">
+                    <div class="img"></div>
+                    <span>HELLO !</span>
+                </div>
 
+                <ul class="record"></ul>
+                <input type="text" id="total">
+                <div class="teclado"></div>
 
-    <script src="./js/main.js"></script>
-    <script src="./js/teclas.js"></script>
-</body>
+            </main>
+            
+            <script src="./js/cargar.js"></script>
+            <script src="./js/resultados.js"></script>
+            <script src="./js/main.js"></script>
+
+        </body>
 </html>
