@@ -90,7 +90,7 @@
     color: var(--color-5);
     cursor: pointer;
 
-    webkit-touch-callout: none;
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
