@@ -84,7 +84,7 @@ function set_record(operation, result) {
     // Crear un elemento de enlace temporal
     const link = document.createElement("a");
     link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(historial);
-    link.download = "historial.txt";
+    link.download = "Historial_Hello!.txt";
     link.style.display = "none";
     
   
