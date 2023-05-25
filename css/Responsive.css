@@ -20,7 +20,7 @@
     .teclado{   
         display: grid;
         grid-template-columns: repeat(5,6.6rem);
-        grid-template-rows: repeat(5, 7.5rem);   
+        grid-template-rows: repeat(5, 5.5rem);   
     }
     .titulo {
         width: 100%;
@@ -47,7 +47,7 @@
           
         display: grid;
         grid-template-columns: repeat(5,8.6rem);
-        grid-template-rows: repeat(5, 5.8rem);
+        grid-template-rows: repeat(5, 5.5rem);
     }
     .titulo {
          width: 100%;
@@ -59,7 +59,7 @@
 @media screen and (min-width: 640px) {
  
     .teclado{
-    
+        width: 100%;
         justify-content: center;
         
         display: grid;
